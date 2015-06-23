@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Buscador de Artículos en Best Buy",
+  "description": "Busca artículos en Best Buy",
+  "version": "1.0",
+  "icons": {"128": "img/main_icon.png"},
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Buscar en Best Buy!"  
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/",
+      "http://*/*",
+        "https://*/*"
+  ],
+
+  "content_security_policy": "script-src 'self' https://api.remix.bestbuy.com; object-src 'self'",
+    
+    "content_scripts": [ {
+    "js": [ "js/jquery-1.11.3.min.js", "js/form.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+    
+}

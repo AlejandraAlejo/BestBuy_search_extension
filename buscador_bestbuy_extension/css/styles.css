@@ -1,0 +1,55 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    min-width: 765px;
+    background-color: #DAE4E5;
+    color: #6C6864;
+    text-align: center;
+}
+
+h1{
+    color: #FDBE23;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.bestbuy-icon{
+    width: 6%;
+}
+
+label{
+    font-weight: 700;
+}
+
+#tabla-resultados-DB, #tabla-resultados{
+    text-align: left;
+}
+
+td:last-child{
+    font-weight: bold;
+}
+
+input{
+    font-family: 'Open Sans', sans-serif;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    font-size: medium;
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #69BDD9;
+    border: 2px solid #69BDD9;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+button:hover{
+    background-color: #03425D;
+    border: 2px solid #03425D;
+    cursor: pointer;
+}
+
+

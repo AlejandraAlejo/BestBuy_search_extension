@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Best Buy Search Extension's Popup</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.3.min.js"></script>       
+    </head>
+    <body>
+        <script src="js/getdata.js"></script>
+        <h1>Best Buy Search<img class = "bestbuy-icon" src="img/bestbuy_icon.png" /></h1>
+        <form id = "formulario" method="" action="">
+            <label>Ingresa el nombre del Artículo:</label>
+            <br />
+            <br />
+            <input  type="text" class="product" name="product" id="product" placeholder="Nombre del Artículo" />
+            <br />
+            <br />
+            <button type="button" id="send">Buscar Artículos</button>
+        </form>
+        <script src="js/form.js"></script>
+        <div id="resultados-DB">
+            <table id="tabla-resultados-DB"></table>
+        </div>
+    </body>
+    
+</html>
+
