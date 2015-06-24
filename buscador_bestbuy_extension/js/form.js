@@ -1,4 +1,4 @@
-document.getElementById("send").onclick = function() {
+$("#send").click(function(){
     var articulo = document.getElementById("product").value;
     chrome.storage.sync.set({ "data" : articulo }, function() {
 		if (chrome.runtime.error) {
@@ -6,4 +6,4 @@ document.getElementById("send").onclick = function() {
 		}
 	});
     window.location = "result.html";    
-}
+});
